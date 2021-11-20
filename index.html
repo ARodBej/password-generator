@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>✨Abracapassword!✨ </title>
+    <link rel="stylesheet" href="./Develop/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Password Generator</h1>
+      </header>
+      <div class="card">
+        <div class="card-header">
+          <h2>Generate a Password</h2>
+        </div>
+        <div class="card-body">
+          <textarea
+            readonly
+            id="password"
+            placeholder="Your Secure Password"
+            aria-label="Generated Password"
+          ></textarea>
+        </div>
+        <!-- form options -->
+        <form id="options" class="options hide">
+          <div class="wrapper">
+            <label for="length" class="length">How long do you want your password m'lord?</label>
+            <input type="number" id="length">
+          </div>
+
+          <div class="wrapper">
+            <label for="numb">Do you wish to have numbers m'lord?</label>
+            <input type="checkbox" id="numb">
+          </div>
+
+          <div class="wrapper">
+            <label for="symbol">How about some symbols m'lord?</label>
+            <input type="checkbox" id="symbol">
+          </div>
+
+          <div class="wrapper">
+            <label for="upcase">Feeling some uppercase m'lord?</label>
+            <input type="checkbox" id="upcase">
+          </div>
+
+          <div class="wrapper">
+            <label for="lowcase">Why not toss in some lowercase m'lord?</label>
+            <input type="checkbox" id="lowcase">
+          </div>
+
+        </form>
+        <div class="card-footer">
+          <button id="generate" class="btn">Generate Password</button>
+        </div>
+      </div>
+    </div>
+    <script src="./Develop/script.js"></script>
+  </body>
+</html>
